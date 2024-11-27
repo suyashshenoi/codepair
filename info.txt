@@ -1,0 +1,3 @@
+client ID: Ov23livSEaKIolXTqu3c
+
+Client Secret: 55e6caf96163a9c26fe49974f214cbeeacb88b91

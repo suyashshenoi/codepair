@@ -1,0 +1,43 @@
+name: GitHub Page Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./frontend
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Setup Node 🔧
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "pnpm"
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Setup Sentry Env 🛠️
+        working-directory: ${{ env.working-directory }}
+        run: |
+          echo "SENTRY_AUTH_TOKEN=${{ secrets.SENTRY_AUTH_TOKEN }}" >> .env.sentry-build-plugin
+          echo "SENTRY_ORG=${{ secrets.SENTRY_ORG }}" >> .env.sentry-build-plugin
+          echo "SENTRY_PROJECT=${{ secrets.SENTRY_PROJECT }}" >> .env.sentry-build-plugin
+
+      - name: Install and Build 🔧
+        working-directory: ${{ env.working-directory }}
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.6.8
+        with:
+          branch: gh-pages
+          folder: frontend/dist

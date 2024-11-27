@@ -1,0 +1,45 @@
+name: CI Frontend
+on:
+  push:
+    branches: main
+    paths:
+      - ".github/workflows/ci_frontend.yaml"
+      - "frontend/**"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ci_frontend.yaml"
+      - "frontend/**"
+
+jobs:
+  test:
+    name: Check the source code
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    env:
+      working-directory: ./frontend
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - name: Install packages
+        run: pnpm install --frozen-lockfile
+        working-directory: ${{ env.working-directory }}
+      - name: Prettier
+        run: pnpm run format:check
+        working-directory: ${{ env.working-directory }}
+      - name: Lint
+        run: pnpm run lint
+        working-directory: ${{ env.working-directory }}
+      - name: Build
+        run: pnpm run build
+        working-directory: ${{ env.working-directory }}
