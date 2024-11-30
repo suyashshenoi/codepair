@@ -8,8 +8,8 @@ services:
             DATABASE_URL: "mongodb://mongo:27017/codepair"
             # Environment variables need to be passed to the container
             # You can find the description of each environment variable in the backend/.env.development file
-            GITHUB_CLIENT_ID: "your_github_client_id_here"
-            GITHUB_CLIENT_SECRET: "your_github_client_secret_here"
+            GITHUB_CLIENT_ID: "Ov23livSEaKIolXTqu3c"
+            GITHUB_CLIENT_SECRET: "55e6caf96163a9c26fe49974f214cbeeacb88b91"
             GITHUB_CALLBACK_URL: "http://localhost:3000/auth/login/github"
             JWT_ACCESS_TOKEN_SECRET: "you_should_change_this_access_token_secret_key_in_production"
             JWT_ACCESS_TOKEN_EXPIRATION_TIME: 86400

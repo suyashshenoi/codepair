@@ -4,12 +4,7 @@
 Build your own AI real-time collaborative markdown editor in just 5 minutes.
 </p>
 
-<p align="center">
-    <a href="https://codepair.yorkie.dev/"><b>Website</b></a> •
-    <a href="https://discord.com/invite/MVEAwz9sBy"><b>Discord</b></a>
-</p>
-
-<img width="1392" alt="스크린샷 2024-02-02 오후 4 35 29" src="https://github.com/yorkie-team/codepair-poc/assets/52884648/25c441ef-9ca4-4235-9969-279e1c56258b">
+<img width="1392" alt="스크린샷 2024-02-02 오후 4 35 29" src="./docs/images/demo.png">
 
 ## Overview
 
@@ -19,14 +14,14 @@ CodePair provides the following features:
 
 - **Workspace**: A space where users can invite others and collaboratively edit documents
 - **Sharing Document**: Share documents with external parties by setting permissions and expiration time
-- **Yorkie Intelligence**: AI intelligence available within the collaborative editing editor
+- **Artificial Intelligence**: AI intelligence available within the collaborative editing editor
 
 ## Packages
 
-This repository contains multiple packages/modules that make up our project. Each package/module is contained in its own directory within this repository.
+This repository contains multiple packages/modules that make up the project. Each package/module is contained in its own directory within this repository.
 
-- **Frontend**: Contains the frontend code of our application. Please refer to [frontend/README.md](frontend/README.md) for detailed information on setting up and running the frontend.
-- **Backend**: Contains the backend code of our application. Please refer to [backend/README.md](backend/README.md) for detailed information on setting up and running the backend.
+- **Frontend**: Contains the frontend code of the application. Please refer to [frontend/README.md](frontend/README.md) for detailed information on setting up and running the frontend.
+- **Backend**: Contains the backend code of the application. Please refer to [backend/README.md](backend/README.md) for detailed information on setting up and running the backend.
 
 ## Getting Started with Development
 
@@ -38,7 +33,7 @@ After completing this step, you should have the `GITHUB_CLIENT_ID` and `GITHUB_C
 
 ### 2. Choose Running Mode
 
-We offer two options. Choose the one that best suits your needs:
+We offer two options. Choose the one that best suits ythe needs:
 
 - **Frontend Development Only Mode**: Use this option if you only want to develop the frontend.
 - **Full Stack Development Mode**: Use this option if you want to develop both the frontend and backend together.
@@ -109,15 +104,3 @@ We offer two options. Choose the one that best suits your needs:
    ```
 
 5. Visit http://localhost:5173 to enjoy your CodePair.
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md) for details on submitting patches and the contribution workflow.
-
-## Contributors ✨
-
-Thanks goes to these incredible people:
-
-<a href="https://github.com/yorkie-team/codepair/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yorkie-team/codepair" />
-</a>

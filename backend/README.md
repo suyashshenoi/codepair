@@ -106,8 +106,3 @@ backend/
 │   └── workspaces/                       # Workspace modules
 └── test/                                 # Test files
 ```
-
-## Contributing
-
-Please see the [CONTRIBUTING.md](../CONTRIBUTING.md) file for details on how to contribute to this project.  
-If you are interested in internal design, please refer to the [Design Document](./design/).

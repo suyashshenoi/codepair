@@ -3,7 +3,7 @@
   "version": "0.1.25",
   "description": "Build your own AI-powered collaborative markdown editor in just 5 minutes",
   "keywords": [],
-  "author": "yorkie-team",
+  "author": "suyashshenoi",
   "license": "Apache-2.0",
   "scripts": {
     "prepare": "husky install",

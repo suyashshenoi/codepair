@@ -2,7 +2,7 @@
 	"name": "@codepair/backend",
 	"version": "0.1.25",
 	"description": "CodePair Backend",
-	"author": "yorkie-team",
+	"author": "suyashshenoi",
 	"license": "Apache-2.0",
 	"scripts": {
 		"build": "nest build",

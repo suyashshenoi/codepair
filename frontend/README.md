@@ -125,7 +125,3 @@ frontend/
 ├── tsconfig.node.json      # TypeScript configuration file for Node.js environment
 └── vite.config.ts          # Vite configuration file
 ```
-
-## Contributing
-
-Please see the [CONTRIBUTING.md](../CONTRIBUTING.md) file for details on how to contribute to this project.
