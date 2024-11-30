@@ -33,7 +33,7 @@ function CloseIntelligenceModal(props: CloseIntelligenceModalProps) {
 						<Typography variant="h6" align="center">
 							Do you want to discard
 							<br />
-							the Yorkie response?
+							the AI response?
 						</Typography>
 					</Stack>
 					<Stack direction="row" gap={1} justifyContent="center">

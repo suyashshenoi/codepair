@@ -50,7 +50,7 @@ function YorkieIntelligence() {
 					style={{ filter: yorkieIntelligence?.enable ? "none" : "grayscale(100%)" }}
 				/>
 				<Typography variant="subtitle1" fontSize={14}>
-					Yorkie Intelligence
+					Artifial Intelligence
 				</Typography>
 			</Button>
 

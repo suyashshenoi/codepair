@@ -82,7 +82,7 @@ export const useYorkieDocument = (
 		try {
 			await client.deactivate({ keepalive: true });
 		} catch (error) {
-			console.error("Error during Yorkie cleanup:", error);
+			console.error("Error during cleanup:", error);
 		}
 	}, [client, doc]);
 
@@ -110,7 +110,7 @@ export const useYorkieDocument = (
 				// Expose the document to the window for debugging purposes
 				window.doc = newDoc;
 			} catch (error) {
-				console.error("Error initializing Yorkie: ", error);
+				console.error("Error initializing: ", error);
 			}
 		};
 

@@ -182,7 +182,7 @@ function YorkieIntelligenceFeature(props: YorkieIntelligenceFeatureProps) {
 							<TextFieldElement
 								variant="outlined"
 								name="content"
-								placeholder={"Tell Yorkie what to do next"}
+								placeholder={"Tell AI what to do next"}
 								required
 								fullWidth
 								disabled={!isComplete}
